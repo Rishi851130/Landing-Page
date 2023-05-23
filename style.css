@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    padding: 0 27px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 47px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.navbar ul li {
+    margin: 10px;
+    padding: 5px 28px;
+    font-size: 15px;
+}
+
+.navbar ul li:hover {
+    background-color: black;
+    color: red;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+.btn {
+    background-color: red;
+    border-radius: 10px;
+    height: 30px;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.btn1 {
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    width: 200px;
+    height: 30px;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    font-weight: bold;
+    background-color: black;
+    color: red;
+}
+
+.btn1:hover {
+    font-weight: bold;
+    background-color: black;
+    color: red;
+}
+
+.navbar h1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: red;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.content .left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card1:hover {
+    background: #00C9FF;
+    border: 1px solid #00C9FF;
+    /* box-shadow: 15px 15px 20px #00ffb6, -15px -15px 20px #00ffb6; */
+}
+
+/* .card1{
+    background: #00ffb6;
+    border: 1px solid black;
+} */
+.card1:hover .list-group-item {
+    background: #00C9FF !important
+}
+
+.card2:hover {
+    background: #00C9FF;
+    border: 1px solid #00C9FF;
+}
+
+/* .card2{
+    background: #00C9FF;
+    border: 1px solid black;
+} */
+.card2:hover .list-group-item {
+    background: #00C9FF !important
+}
+
+.card:hover {
+    width: 400px;
+    height: 425px;
+    /* box-shadow: 15px 15px 20px #00C9FF, -15px -15px 20px #00C9FF; */
+    transition: 0.5s;
+}
+
+.card3:hover {
+
+    background: #00C9FF;
+    border: 1px solid #00C9FF;
+}
+
+/* .card3 {
+    
+    background: gold;
+    border: 1px solid black;
+} */
+
+.card3:hover .list-group-item {
+    background: #00C9FF !important
+}
+
+
+.card:hover .btn-outline-dark {
+    color: white;
+    background: #212529;
+}
+
+/* .card-body{
+    border: 2px solid black;
+} */
+.card:hover .card-body {
+    border: none;
+}
+
+.container {
+    background: hsla(197, 100%, 63%, 1);
+
+    background: linear-gradient(90deg, hsla(197, 100%, 63%, 1) 0%, hsla(294, 100%, 55%, 1) 100%);
+
+    background: -moz-linear-gradient(90deg, hsla(197, 100%, 63%, 1) 0%, hsla(294, 100%, 55%, 1) 100%);
+
+    background: -webkit-linear-gradient(90deg, hsla(197, 100%, 63%, 1) 0%, hsla(294, 100%, 55%, 1) 100%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#40C9FF", endColorstr="#E81CFF", GradientType=1);
+    padding: 20px 0;
+    height: 611px;
+}
+
+.card {
+    border: 2px solid black;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+
+.container2 table {
+    width: 80vw;
+    border-collapse: collapse;
+}
+
+.container2 table th {
+    border-bottom: 3px solid black;
+    /* border-right: 2px solid black; */
+    padding: 10px;
+}
+
+.container2 table td {
+    border-bottom: 3px solid black;
+    /* border-right: 2px solid black; */
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo img {
+    padding-left: 0;
+    padding-right: 0;
+    height: 64px;
+}
+.container-fluid .container .row{
+    display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+}
+@media screen and (max-width: 992px) {
+    .navbar ul {
+        display: none;
+    }
+
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .content .left {
+        order: 2;
+    }
+
+    .content .left span  {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 5px;
+    }
+    .content .right {
+        order: 1;
+    }
+    .container{
+        height: auto;
+    }
+   .container-fluid .container .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .container-fluid .container .row .box{
+        margin-top: 10px;
+    }
+
+}
